@@ -6,8 +6,8 @@
   imports =[
     ../../modules/hw/sound.nix
     ../../modules/languages
-    ../../modules/desktop
     ../../modules/programs
+    ../../modules/desktop.nix
   ]; 
 
   # Bootloader
@@ -75,6 +75,18 @@
   # Nix Configuration
   nix.settings = {
     experimental-features = [ "nix-command" "flakes" ];    
+  };
+
+  #Garbage colector
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+    options = "--delete-older-than 7d";
+  };
+
+  system.autoUpgrade = {
+   enable = true;
+   channel = "https://nixos.org/channels/nixos-23.05";
   };
 
 

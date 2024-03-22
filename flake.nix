@@ -11,14 +11,22 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprland.url = "github:hyprwm/Hyprland";
   };
  
-  outputs = {nixpkgs, ...} @ inputs:
+  outputs = {self, nixpkgs, home-manager, hyprland, ...} @ inputs:
   {
     nixosConfigurations.pijo = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
         ./hosts/pijo
+        hyprland.nixosModules.default
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.pijo = import ./home-manager;
+        }
       ];
     };
   };
