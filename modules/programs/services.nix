@@ -2,11 +2,7 @@
 
 {
 
-  programs.light.enable = true;
-
-  environment.systemPackages = with pkgs; [
-    brightnessctl
-  ];
+  programs.light.enable = true; 
    
   services.auto-cpufreq.enable = true;
   services.auto-cpufreq.settings = {
@@ -38,5 +34,6 @@
   environment.systemPackages = with pkgs; [
     xdg-utils 
     tree
+    brightnessctl
   ];
 }
