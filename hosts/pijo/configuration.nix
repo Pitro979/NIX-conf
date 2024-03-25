@@ -4,7 +4,6 @@
 {
 
   imports =[
-    ../../modules/hw/sound.nix
     ../../modules/languages
     ../../modules/programs
   ]; 

@@ -4,7 +4,6 @@
 {
   imports = [
     ./git.nix
-    #./services.nix
   ];
 
 }
