@@ -6,7 +6,7 @@
   };
 
   imports = [
-    hyprland.homeManagerModules.default
+    #hyprland.homeManagerModules.default
     ./programs
   ];
 
