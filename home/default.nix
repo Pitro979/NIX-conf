@@ -6,8 +6,9 @@
   };
 
   imports = [
-    hyprland.homeManagerModules.default;
-  ]
+    hyprland.homeManagerModules.default
+    ./programs
+  ];
 
   programs.home-manager.enable = true;
 

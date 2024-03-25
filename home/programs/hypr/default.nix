@@ -6,8 +6,8 @@
   ];
 
   home.packages = with pkgs; [ 
-    waybar
-    swww
+    eww
+    swaylock
   ];
   
   #test later systemd.user.targets.hyprland-session.Unit.Wants = [ "xdg-desktop-autostart.target" ];
