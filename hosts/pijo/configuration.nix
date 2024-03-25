@@ -7,7 +7,6 @@
     ../../modules/hw/sound.nix
     ../../modules/languages
     ../../modules/programs
-    ../../modules/desktop.nix
   ]; 
 
   # Bootloader

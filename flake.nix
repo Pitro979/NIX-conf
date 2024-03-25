@@ -25,7 +25,7 @@
         {
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
-          home-manager.users.pijo = import ./home-manager;
+          home-manager.users.pijo = import ./home;
         }
       ];
     };
