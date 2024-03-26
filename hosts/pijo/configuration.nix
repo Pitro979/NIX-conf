@@ -6,6 +6,7 @@
   imports =[
     ../../modules/languages
     ../../modules/programs
+    ../../modules/hardware
   ]; 
 
   # Bootloader

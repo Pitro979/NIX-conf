@@ -4,8 +4,8 @@
   imports = [
     ./configuration.nix
     ./hardware-configuration.nix
-    ./sound.nix
     ./services.nix
+    ./desktop.nix
   ];
 
 }
