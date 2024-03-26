@@ -19,7 +19,7 @@
     settings = {
       "$mod" = "SUPER";
       bind = [
-        "$mod, Q, exec, ${TERMINAL}"
+        "$mod, Q, exec, $TERMINAL"
       ];
     };
   };

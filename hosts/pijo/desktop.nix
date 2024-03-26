@@ -2,7 +2,7 @@
 
 {
 
-  # Gnome
+  #gdm config
   services.xserver = {
     enable = true;
     displayManager = {

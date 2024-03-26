@@ -19,11 +19,7 @@
   services.upower.enable = true;
   programs.fish.enable = true;
   programs.dconf.enable = true;
-  services.dbus.enable = true;
-  services.dbus.packages = with pkgs; [
-  	xfce.xfconf
-  	gnome2.GConf
-  ];
+  services.dbus.enable = true; 
   services.mpd.enable = true;
   services.tumbler.enable = true; 
   services.fwupd.enable = true;
