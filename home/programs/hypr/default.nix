@@ -1,13 +1,15 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, hyprland, ... }:
 
 {
-  imports = [ 
-    ./hyprland-environment.nix
+  imports = [
+    hyprland.homeManagerModules.default
+    ./hyprland-environement.nix
   ];
 
   home.packages = with pkgs; [ 
     waybar
-    ewww
+    eww
+    swww
   ];
   
   #test later systemd.user.targets.hyprland-session.Unit.Wants = [ "xdg-desktop-autostart.target" ];
@@ -15,5 +17,11 @@
     enable = true;
     xwayland.enable = true;
     systemd.enable = true;
+    settings = {
+      "$mod" = "SUPER";
+      bind = [
+        "$mod, Q, exec, kitty"
+      ]
+    }
   };
 }

@@ -11,7 +11,6 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    hyprland.url = "github:hyprwm/Hyprland";
   };
  
   outputs = {self, nixpkgs, home-manager, hyprland, ...} @ inputs:
@@ -20,7 +19,6 @@
       specialArgs = { inherit inputs; };
       modules = [
         ./hosts/pijo
-        hyprland.nixosModules.default
         home-manager.nixosModules.home-manager
         {
           home-manager.useGlobalPkgs = true;
