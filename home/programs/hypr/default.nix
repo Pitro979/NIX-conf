@@ -1,8 +1,7 @@
 { config, lib, pkgs, hyprland, ... }:
 
 {
-  imports = [
-    hyprland.homeManagerModules.default
+  imports = [ 
     ./hyprland-environement.nix
   ];
 
@@ -21,7 +20,7 @@
       "$mod" = "SUPER";
       bind = [
         "$mod, Q, exec, kitty"
-      ]
-    }
+      ];
+    };
   };
 }

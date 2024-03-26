@@ -5,8 +5,7 @@
     homeDirectory = "/home/pijo";
   };
 
-  imports = [
-    #hyprland.homeManagerModules.default
+  imports = [ 
     ./programs
   ];
 

@@ -2,10 +2,11 @@
 
 {
 
+  # Gnome
   services.xserver = {
     enable = true;
     displayManager = {
-      sessionPackages = [ inputs.hyprland.packages.${pkgs.system}.hyprland ];
+      sessionPackages = [ pkgs.hyprland ];
       gdm.enable = true;
       gdm.wayland = true;
     };
