@@ -9,6 +9,8 @@
     eww
     swaylock
   ];
+
+  programs.hyprland.enable = true;
   
   #test later systemd.user.targets.hyprland-session.Unit.Wants = [ "xdg-desktop-autostart.target" ];
   wayland.windowManager.hyprland = {
