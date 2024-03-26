@@ -1,6 +1,6 @@
 # Msi modern 14 Laptop
 
-![plot](../../images/Screenshot from 2024-03-26 09-52-39.png)
+![plot](./../../images/Screenshot from 2024-03-26 09-52-39.png)
 
 ## Desktop
 * DM: gdm
