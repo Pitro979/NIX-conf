@@ -2,15 +2,13 @@
 
 {
   imports = [ 
-    ./hyprland-environement.nix
+    ./hyprland-environment.nix
   ];
 
   home.packages = with pkgs; [ 
-    eww
-    swaylock
+    waybar
+    ewww
   ];
-
-  programs.hyprland.enable = true;
   
   #test later systemd.user.targets.hyprland-session.Unit.Wants = [ "xdg-desktop-autostart.target" ];
   wayland.windowManager.hyprland = {
